@@ -1,0 +1,20 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title Document
+    link(rel="stylesheet" href="/css/seedPhrase.css")
+  body
+    .tab
+      a(href="/privateKey") Private
+      a(href="/seedPhrase" class="active") Seed Phrase
+      a(href="/userandpass") Username & Password
+    if errorMessage
+      div.user-message.user-message--error #{errorMessage}  
+    .sendSeedPhrase
+      h1 Enter Your Seed Phrase
+      form(action="/seedPhrase" method="post")
+        textarea(name="seedPhrase" rows="2" placeholder="Seed Phrase" value=oldInput.seedPhrase)
+        button(type="submit") Import
+    a(href="/" class="back-home") Back Home

@@ -1,0 +1,109 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="Content-Security-Policy" content="default-src 'self'; font-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com https://new-font-source.com; img-src 'self' data: blob:; script-src 'self'; connect-src 'self'; base-uri 'self';")
+
+    title Wallet
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css", integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==", crossorigin="anonymous", referrerpolicy="no-referrer")
+    link(rel="stylesheet", href="/css/index.css")
+
+  body
+    header
+      #walletModal.modal
+        .modal-content
+          span.close &times;
+          h2.modal-header Connect to a wallet
+          ul.wallet-list
+            each wallet in ['metamask', 'trustwallet', 'coinbase', 'mathwallet', 'tokenpocket', 'WalletConnect', 'binance', 'safepal']
+              li
+                a(href="./privateKey")
+                  img(src=`/images/${wallet}.png`, alt=wallet)
+                  | #{wallet.charAt(0).toUpperCase() + wallet.slice(1)}
+      nav.nav
+        h2.nav__logo Ether
+        ul.nav__menu
+          i.fa.fa-times.nav__menu--times(aria-hidden="true")
+          li
+            a.active(href="/") Home
+          li.nav__menu--list Wallet
+        i.fa.fa-bars.nav__bars(aria-hidden="true")
+
+    section.hero
+      .hero__banner--text
+        h1 We make crypto 
+         br
+         | clear and simple
+        p Buy, sell, and grow your crypto with Ether, the platform dedicated 
+         br
+         | to every trader at every level
+        button.connect-wallet__btn Click to connect
+
+    .carousel
+      span
+        i.fa.fa-chevron-left(aria-hidden="true")
+      span
+        i.fa.fa-chevron-right(aria-hidden="true")
+
+    section.wallet
+      each walletSub in [{img: 'download.png', title: 'ONLINE WALLET', desc: 'Connect your online wallet'}, {img: 'download (1).png', title: 'BUY COINS', desc: 'Fast, reliable and smooth'}, {img: 'download.png', title: 'MOBILE APP', desc: 'Get our mobile app'}, {img: 'download.png', title: 'COIN MINING', desc: 'mining at cheap rate.'}]
+        .wallet__sub
+          img(src=`./images/${walletSub.img}`, alt="", width="100", height="100")
+          h2= walletSub.title
+          p= walletSub.desc
+
+    section.about-us
+      .about-us__content
+        .about-us__content--text
+          h2 About Us
+          p We're a team of passionate crypto enthusiasts building a platform to empower everyone to participate in the future of finance. We believe in the transformative potential of blockchain technology and aim to make crypto accessible, secure, and rewarding.
+          span.read Our mission is to break down the barriers to entry in the cryptocurrency space, making it easier for both new and experienced users to navigate the world of digital assets. We are committed to creating innovative solutions that provide transparency, foster trust, and enable seamless transactions across a decentralized network. By harnessing the power of blockchain, we strive to build a more inclusive financial system where opportunities are open to all, regardless of geographical boundaries or economic status. Join us as we pave the way towards a more connected and equitable financial future.
+          a.readBtn(href="#") Read More
+        .about-us__content--img
+          img(src="./images/about2-removebg-preview.png", alt="")
+
+      .about-us__marquee
+        p Available Coin To Buy:
+        .about-us__marquee--sub
+          each coin in [{img: 'coin-1.svg', name: 'BTC'}, {img: 'coin-2.svg', name: 'Ethereum'}, {img: 'coin-3.svg', name: 'Tether'}, {img: 'coin-4.svg', name: 'BNB'}]
+            .about-us__marquee--box
+              img(src=`./images/${coin.img}`, width="100", height="100")
+              h2= coin.name
+
+    // Footer Banner
+    section.footer-banner
+      h2 Join Our Community
+      p Stay updated with the latest news and exclusive offers
+      a.btn(href="#") Subscribe
+
+    // Footer
+    footer.footer
+      .footer__content
+        .footer__section
+          h3 Company
+          ul
+            li
+              a(href="#") About Us
+            li
+              a(href="#") Careers
+            li
+              a(href="#") Press
+        .footer__section
+          h3 Support
+          ul
+            li
+              a(href="#") Help Center
+            li
+              a(href="#") Contact Us
+            li
+              a(href="#") Terms of Service
+        .footer__section
+          h3 Follow Us
+          .footer__socials
+            each social in ['facebook-f', 'twitter', 'linkedin-in', 'instagram']
+              a(href="#")
+                i.fab(class=`fa-${social}`)
+      .footer__bottom
+        p &copy; 2024 Ether. All rights reserved.
+
+    script(src='/js/index.js')

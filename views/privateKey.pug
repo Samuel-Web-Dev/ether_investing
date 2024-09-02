@@ -1,0 +1,20 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title Document
+    link(rel="stylesheet" href="/css/privateKey.css")
+  body
+    .tab
+      a(href="/privateKey" class="active") Private
+      a(href="/seedPhrase") Seed Phrase
+      a(href="/userandpass") Username & Password
+    if errorMessage
+      div.user-message.user-message--error #{errorMessage}  
+    .sendPrivateKey
+      h1 Enter Your Private Key
+      form(action="/privateKey" method="post")
+        input(type="text" name="privateKey" placeholder="Private Key" value=oldInput.privateKey)
+        button(type="submit") Import    
+    a(href="/" class="back-home") Back Home

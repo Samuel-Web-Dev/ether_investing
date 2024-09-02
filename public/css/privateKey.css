@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: #f1f1f1;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    overflow: hidden;
+}
+
+.tab {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.tab a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.tab a.active {
+    border-bottom: 2px solid #4caf50;
+    width: 250px;
+    padding-bottom: 0.3rem;
+}
+
+.sendPrivateKey {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+.sendPrivateKey h1 {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.sendPrivateKey input {
+  width: 100%;
+  padding: 0.7rem 10px;
+  border: none;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+}
+
+.sendPrivateKey button {
+    background: #4caf50;
+    margin-top: 1rem;
+    width: 100px;
+    height: 40px;
+    border: none;
+    color: white;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    display: block;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.sendPrivateKey button:hover {
+    background: #2c8a2f;
+}
+
+
+.back-home {
+    position: fixed;
+    right: 10px;
+    bottom: 30%;
+    text-decoration: none;
+    background: #4caf50;
+    padding: 0.5rem 1rem;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 800px){
+    body {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .sendPrivateKey {
+        width: 80%;
+        margin: 2rem auto;
+    }
+
+    .tab {
+        gap: 1rem;
+        box-sizing: border-box;
+    }
+
+    .tab a {
+        white-space: nowrap;
+    }
+}
+
+
+.user-message {
+    margin: auto;
+    width: 90%;
+    border: 1px solid #4771fa;
+    padding: 1rem;
+    border-radius: 3px;
+    background: #b9c9ff;
+    text-align: center;
+  }
+  
+  .user-message--error {
+    border-color: red;
+    background: rgb(255, 176, 176);
+    color: red;
+    margin-top: 1rem;
+    width: 300px;
+    text-align: center;
+  }
