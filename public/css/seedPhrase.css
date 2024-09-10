@@ -107,6 +107,10 @@ body {
     .tab a {
         white-space: nowrap;
     }
+
+    .tab a.active {
+        width: 150px;
+      }
 }
 
 

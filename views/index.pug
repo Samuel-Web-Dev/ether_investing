@@ -61,14 +61,15 @@ html(lang="en")
           a.readBtn(href="#") Read More
         .about-us__content--img
           img(src="./images/about2-removebg-preview.png", alt="")
-
-      .about-us__marquee
-        p Available Coin To Buy:
-        .about-us__marquee--sub
-          each coin in [{img: 'coin-1.svg', name: 'BTC'}, {img: 'coin-2.svg', name: 'Ethereum'}, {img: 'coin-3.svg', name: 'Tether'}, {img: 'coin-4.svg', name: 'BNB'}]
-            .about-us__marquee--box
-              img(src=`./images/${coin.img}`, width="100", height="100")
-              h2= coin.name
+      
+      .about-us__marquee-container
+        .about-us__marquee
+          p Available Coin To Buy:
+          .about-us__marquee--sub
+            each coin in [{img: 'coin-1.svg', name: 'BTC'}, {img: 'coin-2.svg', name: 'Ethereum'}, {img: 'coin-3.svg', name: 'Tether'}, {img: 'coin-4.svg', name: 'BNB'}]
+              .about-us__marquee--box
+                img(src=`./images/${coin.img}`, width="100", height="100")
+                h2= coin.name
 
     // Footer Banner
     section.footer-banner
