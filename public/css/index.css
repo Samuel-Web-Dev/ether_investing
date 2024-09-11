@@ -23,12 +23,6 @@ body {
   font-style: normal;
 }
 
-@media screen and (max-width: 768px){
-    body {
-        background-attachment: fixed;
-    }
-}
-
 body::-webkit-scrollbar {
   display: none;
 }
@@ -89,55 +83,6 @@ header {
   background: #b982ff;
 }
 
-@media screen and (max-width: 768px) {
-  .nav__bars,
-  .nav__menu--times {
-    display: block;
-    color: white;
-    font-size: 3rem;
-    cursor: pointer;
-  }
-
-  .nav {
-    /* padding: 0 1rem; */
-    height: 190px;
-    margin-bottom: 10rem;
-  }
-
-  .nav .nav__logo {
-    font-size: 3rem;
-  }
-
-  .nav__menu--times {
-    position: absolute;
-    top: 30px;
-    right: 30px;
-  }
-
-  .nav .nav__menu {
-    position: fixed;
-    bottom: 0;
-    top: 0;
-    left: -100%;
-    width: 50%;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    min-height: 100vh;
-    line-height: 2;
-    background: #0f132d;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.5rem;
-    z-index: 10;
-    transition: all 0.5s ease-in-out;
-  }
-
-  .nav .nav__menu.show {
-    left: 0;
-  }
-}
-
 .hero {
   margin-top: 9rem;
   margin-bottom: 3rem;
@@ -184,18 +129,6 @@ header {
   background: #b982ff;
 }
 
-@media screen and (max-width: 768px) {
-  .hero__banner--text button {
-    border-radius: 10px;
-    width: 250px;
-    height: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.5rem;
-  }
-}
-
 .carousel {
   display: flex;
   justify-content: center;
@@ -218,12 +151,6 @@ header {
 .carousel span i {
   color: white;
   font-size: 2rem;
-}
-
-@media screen and (max-width: 768px) {
-  .carousel {
-    gap: 3rem;
-  }
 }
 
 /* Wallet */
@@ -266,11 +193,6 @@ header {
   margin: 0;
 }
 
-@media screen and (max-width: 800px) {
-  .wallet__sub {
-    width: 90%;
-  }
-}
 
 /* About Us */
 .about-us {
@@ -343,33 +265,6 @@ header {
   width: 100%;
 }
 
-@media screen and (max-width: 800px) {
-  .about-us {
-    margin-top: 9rem;
-  }
-
-  .about-us__content {
-    flex-direction: column;
-    width: 100%;
-  }
-
-  .about-us__content--img,
-  .about-us__content--text {
-    width: 90%;
-  }
-
-  .about-us__content--img {
-    position: relative;
-    width: 100%;
-    margin-top: 4rem;
-    display: flex;
-    align-items: center;
-  }
-
-  .about-us__content--img img {
-    display: block;
-  }
-}
 
 .about-us__marquee-container {
   background: #0f132d;
@@ -455,11 +350,6 @@ header {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-@media screen and (max-width: 768px) {
-  .modal-content {
-    max-height: 50%;
-  }
-}
 
 .modal-content::-webkit-scrollbar {
   display: none;
@@ -509,32 +399,6 @@ header {
   width: 40px;
   height: 40px;
   margin-right: 1rem;
-}
-
-@media (max-width: 768px) {
-  .modal-content {
-    padding: 1rem;
-  }
-
-  .close {
-    top: 2rem;
-    right: 3rem;
-    font-size: 5rem;
-  }
-
-  .modal-header {
-    font-size: 1.5rem;
-  }
-
-  .wallet-list li a {
-    padding: 1rem;
-  }
-
-  .wallet-list img {
-    width: 35px;
-    height: 35px;
-    margin-right: 0.5rem;
-  }
 }
 
 /* Footer Banner */
@@ -642,7 +506,132 @@ header {
   font-size: 0.9rem;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px){
+    body {
+        background-attachment: fixed;
+    }
+
+    .nav__bars,
+    .nav__menu--times {
+      display: block;
+      color: white;
+      font-size: 3rem;
+      cursor: pointer;
+    }
+  
+    .nav {
+      /* padding: 0 1rem; */
+      height: 190px;
+      margin-bottom: 10rem;
+    }
+  
+    .nav .nav__logo {
+      font-size: 3rem;
+    }
+  
+    .nav__menu--times {
+      position: absolute;
+      top: 30px;
+      right: 30px;
+    }
+  
+    .nav .nav__menu {
+      position: fixed;
+      bottom: 0;
+      top: 0;
+      left: -100%;
+      width: 50%;
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+      min-height: 100vh;
+      line-height: 2;
+      background: #0f132d;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      z-index: 10;
+      transition: all 0.5s ease-in-out;
+    }
+  
+    .nav .nav__menu.show {
+      left: 0;
+    }
+
+
+    .hero__banner--text button {
+      border-radius: 10px;
+      width: 250px;
+      height: 80px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.5rem;
+    }
+
+    .carousel {
+        gap: 3rem;
+    }
+
+    .wallet__sub {
+        width: 90%;
+      }
+
+      
+      .about-us {
+        margin-top: 9rem;
+      }
+    
+      .about-us__content {
+        flex-direction: column;
+        width: 100%;
+      }
+    
+      .about-us__content--img,
+      .about-us__content--text {
+        width: 90%;
+      }
+    
+      .about-us__content--img {
+        position: relative;
+        width: 100%;
+        margin-top: 4rem;
+        display: flex;
+        align-items: center;
+      }
+    
+      .about-us__content--img img {
+        display: block;
+      }
+
+      .modal-content {
+        max-height: 50%;
+      }
+
+      .modal-content {
+        padding: 1rem;
+      }
+    
+      .close {
+        top: 2rem;
+        right: 3rem;
+        font-size: 5rem;
+      }
+    
+      .modal-header {
+        font-size: 1.5rem;
+      }
+    
+      .wallet-list li a {
+        padding: 1rem;
+      }
+    
+      .wallet-list img {
+        width: 35px;
+        height: 35px;
+        margin-right: 0.5rem;
+      }
+
   .footer__content {
     flex-direction: column;
     align-items: center;
