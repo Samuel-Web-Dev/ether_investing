@@ -12,7 +12,6 @@ body {
 }
 
 body {
-  height: 100%;
   min-height: 100vh;
   background: url("/images/bg-full.png");
   background-size: cover;
@@ -22,6 +21,12 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-style: normal;
+}
+
+@media screen and (max-width: 768px){
+    body {
+        background-attachment: fixed;
+    }
 }
 
 body::-webkit-scrollbar {
@@ -354,7 +359,8 @@ header {
   }
 
   .about-us__content--img {
-    width: 700px;
+    position: relative;
+    width: 100%;
     margin-top: 4rem;
     display: flex;
     align-items: center;
