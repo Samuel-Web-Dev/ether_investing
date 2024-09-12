@@ -7,6 +7,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const read = document.querySelector('.read')
     const readBtn = document.querySelector('.readBtn')
 
+    hideBody()
+
     read.style.display = 'none'
 
     readBtn.addEventListener('click', (event) => {
@@ -48,4 +50,11 @@ document.addEventListener('DOMContentLoaded', () => {
       body.style.overflow = 'scroll';
     })
 
+    function hideBody() {
+      const show = document.querySelector('.show')
+
+      if(show) {
+        body.style.overflowY = 'hidden'
+      }
+    }
   })
