@@ -359,13 +359,13 @@ header {
   position: absolute;
   top: 2rem;
   right: 3rem;
-  font-size: 5rem;
+  font-size: 4rem;
   color: white;
   cursor: pointer;
 }
 
 .modal-header {
-  font-size: 1.75rem;
+  font-size: 1.3rem;
   margin-bottom: 1rem;
 }
 
@@ -515,18 +515,18 @@ header {
     .nav__menu--times {
       display: block;
       color: white;
-      font-size: 3rem;
+      font-size: 1.2rem;
       cursor: pointer;
     }
   
     .nav {
-      /* padding: 0 1rem; */
-      height: 190px;
+      padding: 0 1rem;
+      /* height: 190px; */
       margin-bottom: 10rem;
     }
   
     .nav .nav__logo {
-      font-size: 3rem;
+      font-size: 1.5rem;
     }
   
     .nav__menu--times {
@@ -549,7 +549,7 @@ header {
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       z-index: 10;
       transition: all 0.5s ease-in-out;
     }
@@ -558,24 +558,57 @@ header {
       left: 0;
     }
 
+    .hero__banner--text h1 {
+        margin-top: 0;
+        font-size: 2.5rem;
+    }
+
+    .hero__banner--text p {
+        font-size: 0.9rem;
+    }
+
 
     .hero__banner--text button {
       border-radius: 10px;
-      width: 250px;
-      height: 80px;
+      width: 190px;
+      height: 50px;
       display: flex;
       justify-content: center;
       align-items: center;
-      font-size: 1.5rem;
+      font-size: 1.2rem;
     }
 
     .carousel {
         gap: 3rem;
     }
 
+    .carousel span {
+        width: 70px;
+        height: 70px;
+    }
+
+    .carousel span i {
+        font-size: 1.2rem;
+    }
+
     .wallet__sub {
         width: 90%;
       }
+      
+
+    .wallet__sub h2 {
+        font-size: 1.2rem;
+    }
+
+    .wallet__sub p {
+        font-size: 0.9rem;
+    }
+
+
+    .wallet__sub img {
+        width: 70px;
+        height: 70px;
+    }
 
       
       .about-us {
@@ -591,6 +624,15 @@ header {
       .about-us__content--text {
         width: 90%;
       }
+
+      .about-us__content--text h2 {
+        font-size: 2.5rem;
+      }
+
+      .about-us__content--text p,
+      .about-us__content--text span {
+        font-size: 1.5rem;
+      }
     
       .about-us__content--img {
         position: relative;
@@ -605,7 +647,8 @@ header {
       }
 
       .modal-content {
-        max-height: 50%;
+        height: 70%;
+        width: 100%;
       }
 
       .modal-content {
@@ -614,8 +657,8 @@ header {
     
       .close {
         top: 2rem;
-        right: 3rem;
-        font-size: 5rem;
+        right: 1rem;
+        font-size: 2.5rem;
       }
     
       .modal-header {
@@ -624,6 +667,7 @@ header {
     
       .wallet-list li a {
         padding: 1rem;
+        font-size: 1.2rem;
       }
     
       .wallet-list img {
